@@ -34,7 +34,7 @@ class _NavBarState extends State<NavBar> {
       ],
       currentIndex: indexAtual,
       onTap: mudarIndex,
-      backgroundColor: const Color.fromARGB(255, 248, 205, 255),
+      backgroundColor: Colors.deepPurple[200],
       selectedItemColor: const Color.fromARGB(255, 45, 15, 49),
       ),
     );
