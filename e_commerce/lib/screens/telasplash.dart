@@ -17,7 +17,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(
       Duration(seconds: 5),
-      ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=>TelaLogin()))
+      () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => TelaLogin()),
+      ),
     );
   }
 
@@ -28,8 +31,11 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network("https://www.gruporoxo.com.br/estatico/img/logo.png", width: 100),
-            CircularProgressIndicator(color: Colors.deepPurple[200])
+            Image.network(
+              "https://www.gruporoxo.com.br/estatico/img/logo.png",
+              width: 100,
+            ),
+            CircularProgressIndicator(color: Colors.deepPurple[200]),
           ],
         ),
       ),
